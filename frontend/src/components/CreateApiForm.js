@@ -157,8 +157,8 @@ const CreateApiForm = () => {
         const apiData = { modelName, schemaDefinition, document: randomDocument };
 
         try {
-            const response = await axios.post('http://localhost:5000/api/create', apiData);
-            setApiEndpoint(`http://localhost:5000${response.data.apiEndpoint}`);
+            const response = await axios.post('https://api-generator.onrender.com/api/create', apiData);
+            setApiEndpoint(`https://api-generator.onrender.com${response.data.apiEndpoint}`);
             alert('API created successfully!');
         } catch (error) {
             console.error(error);
