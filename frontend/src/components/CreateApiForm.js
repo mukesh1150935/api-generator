@@ -168,7 +168,7 @@ const CreateApiForm = () => {
 
     return (
         <FormContainer>
-            <h2>Create API</h2>
+            <h2>Generate API</h2>
             <Form onSubmit={handleSubmit}>
                 <Input
                     type="text"
